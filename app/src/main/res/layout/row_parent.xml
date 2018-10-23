@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.ks.nestedrecyclerbindingexample.models.ModelParent"/>
+
+        <variable
+            name="onItemClickListener"
+            type="com.ks.nestedrecyclerbindingexample.callbacks.OnItemClickListener"/>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/holo_blue_bright"
+        android:gravity="center"
+        android:onClick="@{(v)-> onItemClickListener.onItemClick(v,model)}"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:padding="10dp"
+            android:text="@{model.parentName}"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@android:color/white"
+            tools:text="Parent"
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvDefault"
+            rvItemLayout="@{@layout/row_child}"
+            rvList="@{model.children}"
+            rvOnItemClick="@{onItemClickListener}"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:padding="5dp"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            />
+    </LinearLayout>
+</layout>

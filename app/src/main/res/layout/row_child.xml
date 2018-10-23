@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.ks.nestedrecyclerbindingexample.models.ModelChild"/>
+
+        <variable
+            name="onItemClickListener"
+            type="com.ks.nestedrecyclerbindingexample.callbacks.OnItemClickListener"/>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="@{(v) -> onItemClickListener.onItemClick(v, model)}"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@{model.name}"
+            tools:text="Dummy"/>
+
+    </LinearLayout>
+</layout>
