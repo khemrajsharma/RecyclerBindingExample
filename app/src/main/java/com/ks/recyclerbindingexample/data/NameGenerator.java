@@ -1,4 +1,4 @@
-package com.ks.nestedrecyclerbindingexample.data;
+package com.ks.recyclerbindingexample.data;
 
 import android.util.Pair;
 
@@ -61,5 +61,13 @@ public class NameGenerator {
         List<String> childrenList = Arrays.asList(children);
         Collections.shuffle(childrenList);
         return new Pair<>(parents[randomParent], childrenList.subList(0, 5));
+    }
+
+    public static List<String> getDummyParentList() {
+        return Arrays.asList(parents);
+    }
+
+    public static List<String> getDummyChildrenList() {
+        return Arrays.asList(children);
     }
 }

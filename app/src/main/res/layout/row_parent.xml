@@ -7,11 +7,11 @@
 
         <variable
             name="model"
-            type="com.ks.nestedrecyclerbindingexample.models.ModelParent"/>
+            type="com.ks.recyclerbindingexample.models.ModelParent"/>
 
         <variable
             name="onItemClickListener"
-            type="com.ks.nestedrecyclerbindingexample.callbacks.OnItemClickListener"/>
+            type="com.ks.recyclerbindingexample.callbacks.OnItemClickListener"/>
 
     </data>
 
@@ -44,6 +44,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="7"
             android:padding="5dp"
+            android:visible="@{model.children.size()!=0}"
             app:layoutManager="android.support.v7.widget.LinearLayoutManager"
             />
     </LinearLayout>

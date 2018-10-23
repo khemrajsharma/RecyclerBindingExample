@@ -1,4 +1,4 @@
-package com.ks.nestedrecyclerbindingexample.adapters;
+package com.ks.recyclerbindingexample.adapters;
 
 import android.databinding.DataBindingUtil;
 import android.databinding.ViewDataBinding;
@@ -8,17 +8,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.ks.nestedrecyclerbindingexample.BR;
-import com.ks.nestedrecyclerbindingexample.callbacks.OnItemClickListener;
-import com.ks.nestedrecyclerbindingexample.models.BaseModel;
+import com.ks.recyclerbindingexample.BR;
+import com.ks.recyclerbindingexample.callbacks.OnItemClickListener;
+import com.ks.recyclerbindingexample.models.BaseModel;
 
 import java.util.List;
 
 /**
- * Created by sud on 12/23/2017.
+ * Created by KHEMRAJ on 10/23/2018.
  */
 
-/* general recyclerview adapter */
 
 public class GeneralAdapter<T extends BaseModel> extends RecyclerView.Adapter<GeneralAdapter.GRViewHolder> {
 

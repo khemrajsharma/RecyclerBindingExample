@@ -1,4 +1,4 @@
-package com.ks.nestedrecyclerbindingexample.models;
+package com.ks.recyclerbindingexample.models;
 
 import java.util.List;
 
@@ -8,8 +8,8 @@ import java.util.List;
 public class ModelParent extends BaseModel {
     private String parentName;
     private List<ModelChild> children;
-    public ModelParent(String day, List<ModelChild> children) {
-        this.parentName = day;
+    public ModelParent(String parentName, List<ModelChild> children) {
+        this.parentName = parentName;
         this.children = children;
     }
 

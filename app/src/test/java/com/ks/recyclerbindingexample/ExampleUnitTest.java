@@ -1,4 +1,4 @@
-package com.ks.nestedrecyclerbindingexample;
+package com.ks.recyclerbindingexample;
 
 import org.junit.Test;
 

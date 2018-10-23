@@ -1,4 +1,4 @@
-package com.ks.nestedrecyclerbindingexample.callbacks;
+package com.ks.recyclerbindingexample.callbacks;
 
 import android.view.View;
 

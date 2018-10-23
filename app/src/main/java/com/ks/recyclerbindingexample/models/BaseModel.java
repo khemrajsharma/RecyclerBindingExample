@@ -1,10 +1,11 @@
-package com.ks.nestedrecyclerbindingexample.models;
+package com.ks.recyclerbindingexample.models;
 
 
 import android.databinding.BaseObservable;
 
+
 /**
- * Created by sud on 12/23/2017.
+ * Created by KHEMRAJ on 10/23/2018.
  */
 
 public class BaseModel extends BaseObservable {

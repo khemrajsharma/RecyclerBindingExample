@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">NestedRecyclerBindingExample</string>
+    <string name="app_name">RecyclerBindingExample</string>
+    <string name="multiple_list">Multiple List</string>
 </resources>

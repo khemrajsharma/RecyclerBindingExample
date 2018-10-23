@@ -1,4 +1,4 @@
-package com.ks.nestedrecyclerbindingexample;
+package com.ks.recyclerbindingexample;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

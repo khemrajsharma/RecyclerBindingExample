@@ -1,4 +1,4 @@
-package com.ks.nestedrecyclerbindingexample.models;
+package com.ks.recyclerbindingexample.models;
 
 
 /**
